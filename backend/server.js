@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/crud")
+mongoose.connect("mongodb+srv://mohammedrogers579:Rogers2006@crud.9wiir.mongodb.net/")
 
 app.post("/createUser",(req, res) => {
     UserModel.create(req.body)
